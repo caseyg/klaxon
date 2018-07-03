@@ -6,7 +6,7 @@
   @return image-path($path);
 }
 $bootstrap-sass-asset-helper: true;
-$brand-danger: #ff0b3a;
+$brand-danger: #000;
 
 // Core variables and mixins
 @import "bootstrap/variables";
@@ -61,4 +61,3 @@ $brand-danger: #ff0b3a;
 
 // Overrides
 @import "static";
-
