@@ -21,7 +21,7 @@
 </head>
 <body class="<%= yield(:body_classes) %>">
 
-<% if user.present? %>
+<% if @user.present? %>
 <%= render partial: 'layouts/nav' %>
 <% end %>
 
