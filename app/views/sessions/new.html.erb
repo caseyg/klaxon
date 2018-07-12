@@ -3,29 +3,6 @@
 <div class="klax-hero">
   <%= render 'sessions/login_form.html.erb' %>
 </div>
-<hr>
-<div class="klax-section klax-spacer-lg">
-  <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Site</th>
-          <th>Tracking Since</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @pages.each do |page| %>
-        <tr>
-          <td><%= page.name %></td>
-          <td><%= page.domain %></td>
-          <td><%= page.created_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
-</div>
 <div class="klax-section klax-topper klax-footer">
   <div class="container">
     <p style="margin-bottom: 0;">Created at <b><a href="https://themarshallproject.org">The Marshall Project.</a></b>
