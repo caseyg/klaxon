@@ -4,6 +4,6 @@ class ChangeMailer < ApplicationMailer
     @page = @change.after.page
     @user = user
 
-    mail(to: @user.email, subject: "#{@page.name} changed: #{page_change_url(@change)} (#{@page.url})")
+    mail(to: @user.email, subject: "#{@page.name} changed")
   end
 end
